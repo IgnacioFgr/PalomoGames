@@ -6,14 +6,14 @@ const app = new Application({
 	autoDensity: true,
 	backgroundColor: 0x6495ed,
 	width: 640,
-	height: 480
+	height: 380
 });
 
-const clampy: Sprite = Sprite.from("clampy.png");
+const clampy: Sprite = Sprite.from("./clampy.png");
 
-clampy.anchor.set(0.5);
+clampy.anchor.set(0.0);
 
-clampy.x = app.screen.width / 2;
-clampy.y = app.screen.height / 2;
+clampy.x = app.screen.width / 300;
+clampy.y = app.screen.height /300;
 
 app.stage.addChild(clampy);
